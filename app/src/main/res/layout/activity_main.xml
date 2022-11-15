@@ -16,6 +16,31 @@
         style="@style/NameStyle" />
 
 
+    <EditText
+        android:id="@+id/etOpinion"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/IntroduzcaOpinion"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#78909C" />
+
+    <Button
+        android:id="@+id/btHecho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/hecho" />
+
+    <TextView
+        android:id="@+id/tvtextOpinion"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:visibility="gone" />
 
     <ScrollView
         android:id="@+id/textScroll"
@@ -33,7 +58,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:contentDescription="@string/estrella"
-                app:srcCompat="@android:drawable/btn_star_big_on" />
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/bookText"
